@@ -1,4 +1,5 @@
-import { MessageCircle, Phone, Check, Truck } from "lucide-react";
+import { ShoppingCart, Phone, Check, Truck } from "lucide-react";
+import tankImg from "@/assets/roto-tank.png";
 import {
   type Product,
   formatKsh,
@@ -9,8 +10,8 @@ import {
 
 export function ProductCard({ product }: { product: Product }) {
   const message =
-    `Hello Roto Tanks,\n\nI'm interested in the ${formatLitres(product.litres)} tank ` +
-    `(${product.profile}) listed at ${formatKsh(product.priceKsh)}.\n\nPlease share availability and delivery details. Thank you.`;
+    `Hello Roto Tanks,\n\nI'd like to ORDER the ${formatLitres(product.litres)} tank ` +
+    `(${product.profile}) listed at ${formatKsh(product.priceKsh)}.\n\nPlease confirm availability and delivery details. Thank you.`;
   const wa = whatsappLink(message);
 
   return (
@@ -21,17 +22,27 @@ export function ProductCard({ product }: { product: Product }) {
         </div>
       )}
 
-      <div className="relative flex items-center justify-center bg-gradient-to-br from-secondary to-accent/40 px-6 py-10">
+      <div className="relative flex items-center justify-center bg-gradient-to-br from-secondary to-accent/40 px-6 py-8">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,oklch(0.72_0.16_210/0.18),transparent_60%)]" />
-        <div className="relative text-center">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-aqua">
-            {product.category}
+        <div className="relative flex flex-col items-center gap-3">
+          <img
+            src={tankImg}
+            alt={`Roto Tank ${formatLitres(product.litres)}`}
+            width={220}
+            height={220}
+            loading="lazy"
+            className="h-40 w-auto object-contain drop-shadow-2xl transition-smooth group-hover:scale-105"
+          />
+          <div className="text-center">
+            <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-aqua">
+              {product.category}
+            </div>
+            <div className="mt-1 font-display text-4xl font-bold text-ink lg:text-5xl">
+              {product.litres.toLocaleString("en-KE")}
+              <span className="ml-1 text-xl font-medium text-muted-foreground">L</span>
+            </div>
+            <div className="mt-0.5 text-sm font-medium text-foreground/70">{product.profile}</div>
           </div>
-          <div className="mt-2 font-display text-5xl font-bold text-ink lg:text-6xl">
-            {product.litres.toLocaleString("en-KE")}
-            <span className="ml-1 text-2xl font-medium text-muted-foreground">L</span>
-          </div>
-          <div className="mt-1 text-sm font-medium text-foreground/70">{product.profile}</div>
         </div>
       </div>
 
@@ -70,10 +81,10 @@ export function ProductCard({ product }: { product: Product }) {
             href={wa}
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center justify-center gap-1.5 rounded-full bg-whatsapp px-3 py-2.5 text-sm font-semibold text-white transition-smooth hover:opacity-90"
+            className="inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-amber px-3 py-2.5 text-sm font-semibold text-amber-cta-foreground shadow-amber transition-smooth hover:scale-[1.03]"
           >
-            <MessageCircle className="h-4 w-4" />
-            WhatsApp
+            <ShoppingCart className="h-4 w-4" />
+            Order
           </a>
           <a
             href={telLink()}

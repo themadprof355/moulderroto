@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Check, Droplets, MessageCircle, Phone, Shield, Truck, Award, Users, Sprout, Building2 } from "lucide-react";
-import heroImg from "@/assets/hero-tank.jpg";
-import lineupImg from "@/assets/tanks-lineup.jpg";
+import heroImg from "@/assets/roto-hero.png";
+import lineupImg from "@/assets/roto-tank-range.jpg";
 import { ProductCard } from "@/components/ProductCard";
 import { PHONE_DISPLAY, products, telLink, whatsappLink } from "@/lib/products";
 

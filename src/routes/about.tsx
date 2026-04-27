@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Award, Droplets, MessageCircle, Phone, Shield, Truck, Users } from "lucide-react";
-import lineupImg from "@/assets/tanks-lineup.jpg";
+import lineupImg from "@/assets/roto-tank-range.jpg";
 import { PHONE_DISPLAY, telLink, whatsappLink } from "@/lib/products";
 
 export const Route = createFileRoute("/about")({
