@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Droplets, Phone, MessageCircle, MapPin } from "lucide-react";
+import { Phone, MessageCircle, MapPin } from "lucide-react";
+import logoImg from "@/assets/roto-logo.png";
 import { PHONE_DISPLAY, telLink, whatsappLink } from "@/lib/products";
 
 export function SiteFooter() {
@@ -9,11 +10,11 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2.5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-aqua">
-                <Droplets className="h-5 w-5 text-aqua-foreground" />
+            <div className="flex items-center gap-3">
+              <div className="rounded-xl bg-white px-3 py-2">
+                <img src={logoImg} alt="Roto Tanks logo" width={120} height={40} className="h-9 w-auto object-contain" />
               </div>
-              <div className="font-display text-xl font-bold">Roto Tanks Kenya</div>
+              <div className="font-display text-xl font-bold">Kenya</div>
             </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-primary-foreground/70">
               Heavy-duty plastic water storage tanks for homes, farms, businesses and institutions

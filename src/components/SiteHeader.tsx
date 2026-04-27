@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Phone, Droplets } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import logoImg from "@/assets/roto-logo.png";
 import { PHONE_DISPLAY, telLink } from "@/lib/products";
 
 const nav = [
@@ -16,13 +17,16 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link to="/" className="group flex items-center gap-2.5">
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-aqua shadow-glow transition-smooth group-hover:scale-105">
-            <Droplets className="h-5 w-5 text-aqua-foreground" />
-          </div>
-          <div className="leading-tight">
-            <div className="font-display text-lg font-bold text-ink">Roto Tanks</div>
-            <div className="text-[10px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+        <Link to="/" className="group flex items-center gap-3">
+          <img
+            src={logoImg}
+            alt="Roto Tanks logo"
+            width={140}
+            height={48}
+            className="h-10 w-auto object-contain transition-smooth group-hover:scale-105"
+          />
+          <div className="hidden leading-tight sm:block">
+            <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               Kenya
             </div>
           </div>
