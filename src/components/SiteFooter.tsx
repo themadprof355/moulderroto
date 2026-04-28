@@ -4,7 +4,7 @@ import logoImg from "@/assets/roto-logo.png";
 import { PHONE_DISPLAY, telLink, whatsappLink } from "@/lib/products";
 
 export function SiteFooter() {
-  const wa = whatsappLink("Hello Roto Tanks, I'd like to learn more about your water tanks.");
+  const wa = whatsappLink("Hello Roto Tanks Direct, I'd like to learn more about your water tanks.");
   return (
     <footer className="border-t border-border/60 bg-primary text-primary-foreground">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -17,8 +17,8 @@ export function SiteFooter() {
               <div className="font-display text-xl font-bold">Kenya</div>
             </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-primary-foreground/70">
-              Heavy-duty plastic water storage tanks for homes, farms, businesses and institutions
-              across Kenya. From 1,000 to 24,000 litres — built to last, priced to deliver.
+              Roto Tanks Direct manufactures and supplies plastic water storage tanks for homes,
+              farms, businesses, institutions, and project sites across Kenya.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -28,7 +28,7 @@ export function SiteFooter() {
                 className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white shadow-glow transition-smooth hover:scale-[1.03]"
               >
                 <MessageCircle className="h-4 w-4" />
-                WhatsApp Us
+                WhatsApp
               </a>
               <a
                 href={telLink()}
@@ -46,7 +46,7 @@ export function SiteFooter() {
             </div>
             <ul className="space-y-2.5 text-sm">
               <li><Link to="/" className="text-primary-foreground/75 hover:text-aqua">Home</Link></li>
-              <li><Link to="/products" className="text-primary-foreground/75 hover:text-aqua">Tanks & Prices</Link></li>
+              <li><Link to="/products" className="text-primary-foreground/75 hover:text-aqua">Water Tanks</Link></li>
               <li><Link to="/about" className="text-primary-foreground/75 hover:text-aqua">About</Link></li>
               <li><Link to="/contact" className="text-primary-foreground/75 hover:text-aqua">Contact</Link></li>
             </ul>
@@ -66,20 +66,20 @@ export function SiteFooter() {
               <li className="flex items-start gap-2.5">
                 <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-aqua" />
                 <a href={wa} target="_blank" rel="noreferrer noopener" className="text-primary-foreground/85 hover:text-aqua">
-                  WhatsApp Order Desk
+                  WhatsApp Enquiries
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-aqua" />
-                <span className="text-primary-foreground/85">Nationwide delivery across Kenya</span>
+                <span className="text-primary-foreground/85">Kenya - delivery details confirmed by order</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-primary-foreground/10 pt-6 text-xs text-primary-foreground/55 sm:flex-row sm:items-center sm:justify-between">
-          <div>© {new Date().getFullYear()} Roto Tanks Kenya. All rights reserved.</div>
-          <div>Built for durability. Trusted across Kenya.</div>
+          <div>© {new Date().getFullYear()} Roto Tanks Direct. All rights reserved.</div>
+          <div>We manufacture and supply our own water tank products. We do not sell counterfeit or imitation goods.</div>
         </div>
       </div>
     </footer>

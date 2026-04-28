@@ -10,8 +10,8 @@ import {
 
 export function ProductCard({ product }: { product: Product }) {
   const message =
-    `Hello Roto Tanks,\n\nI'd like to ORDER the ${formatLitres(product.litres)} tank ` +
-    `(${product.profile}) listed at ${formatKsh(product.priceKsh)}.\n\nPlease confirm availability and delivery details. Thank you.`;
+    `Hello Roto Tanks Direct,\n\nI'd like information about the ${formatLitres(product.litres)} plastic water tank ` +
+    `(${product.profile}) listed at ${formatKsh(product.priceKsh)}.\n\nPlease confirm availability, final price, and delivery details. Thank you.`;
   const wa = whatsappLink(message);
 
   return (
@@ -27,7 +27,7 @@ export function ProductCard({ product }: { product: Product }) {
         <div className="relative flex flex-col items-center gap-3">
           <img
             src={tankImg}
-            alt={`Roto Tank ${formatLitres(product.litres)}`}
+            alt={`Roto Tanks Direct ${formatLitres(product.litres)} plastic water tank`}
             width={220}
             height={220}
             loading="lazy"
@@ -68,7 +68,7 @@ export function ProductCard({ product }: { product: Product }) {
         <div className="mt-auto flex items-end justify-between border-t border-border pt-5">
           <div>
             <div className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
-              From
+              Listed price
             </div>
             <div className="font-display text-2xl font-bold text-ink">
               {formatKsh(product.priceKsh)}
@@ -84,7 +84,7 @@ export function ProductCard({ product }: { product: Product }) {
             className="inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-amber px-3 py-2.5 text-sm font-semibold text-amber-cta-foreground shadow-amber transition-smooth hover:scale-[1.03]"
           >
             <ShoppingCart className="h-4 w-4" />
-            Order
+            Enquire
           </a>
           <a
             href={telLink()}

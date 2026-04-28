@@ -8,16 +8,16 @@ import { PHONE_DISPLAY, products, telLink, whatsappLink } from "@/lib/products";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Roto Tanks Kenya — Heavy-Duty Water Storage Tanks | 1,000L to 24,000L" },
+      { title: "Roto Tanks Direct - Plastic Water Storage Tanks | 1,000L to 24,000L" },
       {
         name: "description",
         content:
-          "Buy durable plastic water storage tanks in Kenya. Sizes from 1,000L to 24,000L for homes, farms, schools, and industry. Fast WhatsApp ordering.",
+          "Roto Tanks Direct manufactures and supplies plastic water storage tanks in Kenya. Sizes from 1,000L to 24,000L for homes, farms, schools, businesses, and industry.",
       },
-      { property: "og:title", content: "Roto Tanks Kenya — Built to Store. Built to Last." },
+      { property: "og:title", content: "Roto Tanks Direct - Plastic Water Storage Tanks" },
       {
         property: "og:description",
-        content: "Heavy-duty water tanks from 1,000 to 24,000 litres. Order via WhatsApp or call.",
+        content: "Plastic water tanks from 1,000 to 24,000 litres. Contact Roto Tanks Direct for availability and pricing.",
       },
     ],
   }),
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
 
 function HomePage() {
   const featured = [products[1], products[4], products[7]];
-  const wa = whatsappLink("Hello Roto Tanks, I'd like a quote on a water tank.");
+  const wa = whatsappLink("Hello Roto Tanks Direct, I'd like a quote on a water tank.");
 
   return (
     <>
@@ -42,19 +42,19 @@ function HomePage() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-aqua/40 bg-aqua/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-aqua">
               <Droplets className="h-3.5 w-3.5" />
-              Trusted across Kenya
+              Roto Tanks Direct
             </div>
             <h1 className="mt-6 font-display text-5xl font-bold leading-[1.05] text-balance text-primary-foreground sm:text-6xl lg:text-7xl">
-              Built to store.
+              Plastic water storage
               <span className="block bg-gradient-to-r from-aqua to-amber-cta bg-clip-text text-transparent">
-                Built to last.
+                for practical daily use.
               </span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
-              Heavy-duty plastic water storage tanks for homes, farms, businesses and institutions.
+              We manufacture and supply our own plastic water storage tanks for homes, farms, businesses and institutions.
               From <strong className="text-aqua">1,000L</strong> for kiosks to{" "}
-              <strong className="text-aqua">24,000L</strong> for industrial reserves — order today via
-              WhatsApp or phone.
+              <strong className="text-aqua">24,000L</strong> for larger sites, contact us by
+              WhatsApp or phone for current availability and pricing.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -65,7 +65,7 @@ function HomePage() {
                 className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-7 py-4 text-base font-semibold text-white shadow-elegant transition-smooth hover:scale-[1.03]"
               >
                 <MessageCircle className="h-5 w-5" />
-                Order on WhatsApp
+                Request a Quote
               </a>
               <a
                 href={telLink()}
@@ -79,7 +79,7 @@ function HomePage() {
             <div className="mt-10 grid max-w-lg grid-cols-3 gap-6 border-t border-primary-foreground/15 pt-8">
               <Stat value="11" label="Tank sizes" />
               <Stat value="24,000L" label="Max capacity" />
-              <Stat value="UV+" label="Stabilized shell" />
+              <Stat value="UV" label="Resistant finish" />
             </div>
           </div>
 
@@ -88,17 +88,17 @@ function HomePage() {
               <div className="absolute inset-0 rounded-3xl bg-gradient-aqua opacity-30 blur-3xl" />
               <img
                 src={heroImg}
-                alt="Heavy-duty Roto Tank standing tall in Kenyan landscape"
+                alt="Roto Tanks Direct plastic water tank"
                 width={1600}
                 height={1200}
                 className="relative h-full w-full rounded-3xl object-cover shadow-elegant animate-float"
               />
               <div className="absolute -bottom-6 -left-6 rounded-2xl bg-surface-elevated p-4 shadow-elegant">
                 <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                  Starting from
+                  Price from
                 </div>
                 <div className="font-display text-3xl font-bold text-ink">KSh 6,500</div>
-                <div className="text-xs text-foreground/60">1,000L household tank</div>
+                <div className="text-xs text-foreground/60">1,000L plastic water tank</div>
               </div>
             </div>
           </div>
@@ -108,10 +108,10 @@ function HomePage() {
       {/* TRUST STRIP */}
       <section className="border-y border-border bg-surface">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 py-10 sm:px-6 md:grid-cols-4 lg:px-8">
-          <Trust icon={Shield} title="UV Stabilized" copy="Built for years of African sun" />
-          <Trust icon={Truck} title="Nationwide Delivery" copy="Stock & scheduled logistics" />
-          <Trust icon={Award} title="Industrial Grade" copy="Heavy-duty ribbed walls" />
-          <Trust icon={Users} title="Trusted Service" copy="Friendly support, real people" />
+          <Trust icon={Shield} title="UV-Resistant Finish" copy="Plastic tanks for outdoor storage" />
+          <Trust icon={Truck} title="Delivery Support" copy="Availability and delivery confirmed by phone" />
+          <Trust icon={Award} title="Ribbed Wall Design" copy="Structured tank walls for water storage" />
+          <Trust icon={Users} title="Direct Support" copy="Speak with the Roto Tanks Direct team" />
         </div>
       </section>
 
@@ -120,14 +120,14 @@ function HomePage() {
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-2xl">
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-aqua">
-              Most popular sizes
+              Product range
             </div>
             <h2 className="mt-3 font-display text-4xl font-bold text-balance text-ink sm:text-5xl">
-              Pick the tank that fits your demand.
+              Choose a tank by capacity and use.
             </h2>
             <p className="mt-4 text-lg text-foreground/70">
-              From the family-favourite 2,000L to the farm workhorse 10,000L — every tank is built
-              for daily use and long-term reliability.
+              Browse plastic water tanks by litre capacity, material, and intended use for homes,
+              farms, businesses, institutions, and project sites.
             </p>
           </div>
           <Link
@@ -152,21 +152,21 @@ function HomePage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-aqua">
-                Made for every use
+              Practical applications
               </div>
               <h2 className="mt-3 font-display text-4xl font-bold text-balance text-ink sm:text-5xl">
-                One range, every Kenyan use case.
+                Water storage options for common site needs.
               </h2>
               <p className="mt-4 text-lg text-foreground/70">
-                Whether you're stocking a single home, supplying a school, or running an irrigation
-                line — there's a Roto Tank built for the job.
+                Select a tank based on capacity, installation space, and intended storage use.
+                Our range supports household backup, farm storage, schools, and commercial premises.
               </p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <UseCase icon={Users} title="Homes & Rentals" copy="1,000L to 4,000L for families and multi-unit compounds." />
-                <UseCase icon={Building2} title="Schools & SMEs" copy="5,000L to 8,000L for institutional daily supply." />
-                <UseCase icon={Sprout} title="Farms & Irrigation" copy="10,000L workhorse tanks for livestock and crops." />
-                <UseCase icon={Award} title="Industrial Projects" copy="16,000L to 24,000L scheduled-logistics reserves." />
+                <UseCase icon={Users} title="Homes & Rentals" copy="1,000L to 4,000L options for domestic backup storage." />
+                <UseCase icon={Building2} title="Schools & Businesses" copy="5,000L to 8,000L options for shared daily water storage." />
+                <UseCase icon={Sprout} title="Farms & Irrigation" copy="Large tanks for livestock water storage and irrigation planning." />
+                <UseCase icon={Award} title="Project Sites" copy="16,000L to 24,000L options arranged with scheduled delivery." />
               </div>
             </div>
 
@@ -174,7 +174,7 @@ function HomePage() {
               <div className="absolute -inset-4 rounded-3xl bg-gradient-aqua opacity-20 blur-2xl" />
               <img
                 src={lineupImg}
-                alt="A lineup of Roto Tanks in different sizes"
+                alt="Roto Tanks Direct plastic water tanks in different sizes"
                 width={1600}
                 height={900}
                 loading="lazy"
@@ -189,18 +189,18 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
         <div className="text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.2em] text-aqua">
-            Why Roto Tanks
+            Why Roto Tanks Direct
           </div>
           <h2 className="mx-auto mt-3 max-w-3xl font-display text-4xl font-bold text-balance text-ink sm:text-5xl">
-            Tough shells. Honest prices. Real human support.
+            Clear product information and direct customer support.
           </h2>
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {[
-            { t: "Heavy-duty by design", c: "Thick, ribbed walls and stable bases engineered for daily use and long storage cycles.", i: Shield },
-            { t: "Transparent pricing", c: "All eleven sizes are listed with clear prices in KSh — no surprise fees, no hidden costs.", i: Award },
-            { t: "Order in seconds", c: "Send a WhatsApp or place a quick call. We confirm stock, delivery and final price fast.", i: MessageCircle },
+            { t: "Own brand identity", c: "Our website represents Roto Tanks Direct water tank products only.", i: Shield },
+            { t: "Clear capacity details", c: "Tank listings focus on litre capacity, material, intended use, pricing, and delivery information.", i: Award },
+            { t: "Direct ordering support", c: "Contact us by WhatsApp or phone to confirm stock, delivery details, and final pricing.", i: MessageCircle },
           ].map((f) => (
             <div key={f.t} className="rounded-2xl border border-border bg-card p-7 shadow-card">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-aqua text-aqua-foreground">
@@ -219,14 +219,14 @@ function HomePage() {
           <div className="grid gap-12 lg:grid-cols-5">
             <div className="lg:col-span-2">
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-aqua">
-                Simple ordering
+              Ordering process
               </div>
               <h2 className="mt-3 font-display text-4xl font-bold text-balance sm:text-5xl">
-                Three steps from chat to delivery.
+                Three steps to request a tank.
               </h2>
               <p className="mt-4 text-lg text-primary-foreground/75">
-                Skip the forms. We confirm your tank size, location and price by WhatsApp or call —
-                then arrange dispatch.
+                Contact us with your preferred tank capacity and location. We confirm availability,
+                price, and delivery options before dispatch is arranged.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -236,7 +236,7 @@ function HomePage() {
                   className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3.5 text-base font-semibold text-white shadow-glow transition-smooth hover:scale-[1.03]"
                 >
                   <MessageCircle className="h-5 w-5" />
-                  Start a WhatsApp Chat
+                  Request by WhatsApp
                 </a>
                 <a
                   href={telLink()}
@@ -250,9 +250,9 @@ function HomePage() {
 
             <div className="grid gap-4 lg:col-span-3 sm:grid-cols-3">
               {[
-                { n: "01", t: "Chat or call", c: "Tell us your tank size and location." },
-                { n: "02", t: "Confirm price", c: "We share final price, stock and delivery slot." },
-                { n: "03", t: "Tank delivered", c: "Receive your tank and start storing water." },
+                { n: "01", t: "Chat or call", c: "Share the tank capacity and delivery location." },
+                { n: "02", t: "Confirm details", c: "We confirm availability, price, and delivery options." },
+                { n: "03", t: "Arrange delivery", c: "Delivery is scheduled after order details are confirmed." },
               ].map((s) => (
                 <div key={s.n} className="rounded-2xl border border-primary-foreground/15 bg-primary-foreground/[0.04] p-6 backdrop-blur">
                   <div className="font-display text-3xl font-bold text-aqua">{s.n}</div>
@@ -271,10 +271,10 @@ function HomePage() {
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <div>
               <h2 className="font-display text-4xl font-bold text-balance sm:text-5xl">
-                Ready to secure your water supply?
+                Need a plastic water storage tank?
               </h2>
               <p className="mt-4 text-lg text-primary-foreground/80">
-                Browse all eleven sizes, then order in a single message.
+                Browse available capacities, then contact us for current pricing and delivery details.
               </p>
             </div>
             <div className="flex flex-wrap justify-start gap-3 md:justify-end">
@@ -282,7 +282,7 @@ function HomePage() {
                 to="/products"
                 className="inline-flex items-center gap-2 rounded-full bg-aqua px-6 py-3.5 text-base font-semibold text-aqua-foreground transition-smooth hover:scale-[1.03]"
               >
-                See All Tanks <ArrowRight className="h-4 w-4" />
+                View Tank Range <ArrowRight className="h-4 w-4" />
               </Link>
               <a
                 href={wa}

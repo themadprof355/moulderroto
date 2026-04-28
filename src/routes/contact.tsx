@@ -5,16 +5,16 @@ import { PHONE_DISPLAY, telLink, whatsappLink } from "@/lib/products";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Roto Tanks Kenya — Order via WhatsApp or Call" },
+      { title: "Contact Roto Tanks Direct - Water Tank Enquiries" },
       {
         name: "description",
         content:
-          "Contact Roto Tanks Kenya to order water storage tanks. WhatsApp or call +254 756 619 002 for fast quotes and nationwide delivery.",
+          "Contact Roto Tanks Direct for plastic water tank pricing, availability, and delivery details in Kenya. WhatsApp or call +254 756 619 002.",
       },
-      { property: "og:title", content: "Contact Roto Tanks Kenya" },
+      { property: "og:title", content: "Contact Roto Tanks Direct" },
       {
         property: "og:description",
-        content: "WhatsApp or call us to order water storage tanks across Kenya.",
+        content: "WhatsApp or call Roto Tanks Direct for water tank enquiries in Kenya.",
       },
     ],
   }),
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const wa = whatsappLink("Hello Roto Tanks, I'd like to make an enquiry.");
+  const wa = whatsappLink("Hello Roto Tanks Direct, I'd like to make an enquiry.");
 
   return (
     <>
@@ -32,11 +32,11 @@ function ContactPage() {
             Get in touch
           </div>
           <h1 className="mt-3 max-w-3xl font-display text-5xl font-bold text-balance sm:text-6xl">
-            One quick chat. One delivered tank.
+            Contact us for tank pricing and availability.
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-primary-foreground/80">
-            We respond fast. Send a WhatsApp message or call us — a real person will confirm your
-            tank size, location and delivery slot.
+            Send a WhatsApp message or call us to confirm your preferred tank capacity, delivery
+            location, current availability, and price.
           </p>
         </div>
       </section>
@@ -56,10 +56,10 @@ function ContactPage() {
               </div>
               <h2 className="mt-6 font-display text-3xl font-bold">WhatsApp us</h2>
               <p className="mt-2 max-w-sm text-white/85">
-                Best for sharing your location, photos of installation site, and quick quotes.
+                Share your preferred tank capacity, location, and installation site details.
               </p>
               <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-white/95 px-5 py-3 text-sm font-semibold text-whatsapp">
-                Open chat → {PHONE_DISPLAY}
+                Open chat - {PHONE_DISPLAY}
               </div>
             </div>
           </a>
@@ -75,10 +75,10 @@ function ContactPage() {
               </div>
               <h2 className="mt-6 font-display text-3xl font-bold">Call us</h2>
               <p className="mt-2 max-w-sm text-amber-cta-foreground/85">
-                Prefer voice? Tap to call and speak with our team straight away.
+                Prefer voice? Tap to call and speak with the Roto Tanks Direct team.
               </p>
               <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-amber-cta-foreground px-5 py-3 text-sm font-semibold text-amber-cta">
-                Call now → {PHONE_DISPLAY}
+                Call now - {PHONE_DISPLAY}
               </div>
             </div>
           </a>
@@ -86,8 +86,8 @@ function ContactPage() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <Info icon={Phone} title="Phone" lines={[PHONE_DISPLAY, "Call or SMS"]} />
-          <Info icon={MapPin} title="Service area" lines={["Nationwide delivery", "Across Kenya"]} />
-          <Info icon={Clock} title="Hours" lines={["Mon–Sat: 8am – 6pm", "Sun: by request"]} />
+          <Info icon={MapPin} title="Location" lines={["Kenya", "Delivery details confirmed by order"]} />
+          <Info icon={Clock} title="Hours" lines={["Mon-Sat: 8am - 6pm", "Sun: by request"]} />
         </div>
       </section>
 
@@ -97,10 +97,10 @@ function ContactPage() {
             What to share when you reach out
           </h2>
           <p className="mt-4 text-foreground/70">
-            To get the fastest quote, mention your <strong>tank size</strong> (in litres), your{" "}
+            To receive an accurate quote, mention your <strong>tank size</strong> (in litres), your{" "}
             <strong>delivery location</strong>, and whether you need any{" "}
-            <strong>installation guidance</strong>. We'll come back with availability and final
-            price right away.
+            <strong>installation guidance</strong>. We will respond with availability, pricing, and
+            delivery information.
           </p>
         </div>
       </section>

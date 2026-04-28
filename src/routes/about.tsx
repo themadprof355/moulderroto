@@ -6,16 +6,16 @@ import { PHONE_DISPLAY, telLink, whatsappLink } from "@/lib/products";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Roto Tanks Kenya — Heavy-Duty Water Storage" },
+      { title: "About Roto Tanks Direct - Water Tank Manufacturer and Supplier" },
       {
         name: "description",
         content:
-          "Roto Tanks Kenya supplies heavy-duty plastic water storage tanks built for African conditions. UV-stabilized, ribbed-wall design, nationwide delivery.",
+          "Roto Tanks Direct manufactures and supplies plastic water storage tanks for homes, farms, businesses, institutions, and industrial sites in Kenya.",
       },
-      { property: "og:title", content: "About Roto Tanks Kenya" },
+      { property: "og:title", content: "About Roto Tanks Direct" },
       {
         property: "og:description",
-        content: "Heavy-duty plastic water tanks for Kenyan homes, farms and industry.",
+        content: "Plastic water storage tanks manufactured and supplied under the Roto Tanks Direct name.",
       },
     ],
   }),
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/about")({
 });
 
 function AboutPage() {
-  const wa = whatsappLink("Hello Roto Tanks, I'd like to know more about your company.");
+  const wa = whatsappLink("Hello Roto Tanks Direct, I'd like to know more about your company.");
 
   return (
     <>
@@ -31,15 +31,15 @@ function AboutPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 md:py-28 lg:grid-cols-5 lg:px-8">
           <div className="lg:col-span-3">
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-aqua">
-              About Roto Tanks
+              About Roto Tanks Direct
             </div>
             <h1 className="mt-3 font-display text-5xl font-bold text-balance sm:text-6xl">
-              Storing Kenya's water — one tank at a time.
+              Manufacturer and supplier of plastic water tanks.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80">
-              Reliable water storage is the backbone of every home, farm, and business in Kenya. We
-              supply heavy-duty plastic tanks engineered for the African sun, daily wear, and
-              long-term reserves — all backed by transparent pricing and friendly support.
+              Roto Tanks Direct manufactures and supplies plastic water storage tanks for practical
+              water storage needs across Kenya. Our products are sold under our own brand identity
+              and described by capacity, material, intended use, and delivery availability.
             </p>
           </div>
           <div className="lg:col-span-2">
@@ -47,7 +47,7 @@ function AboutPage() {
               <div className="absolute -inset-3 rounded-3xl bg-gradient-aqua opacity-30 blur-2xl" />
               <img
                 src={lineupImg}
-                alt="A lineup of Roto Tanks"
+                alt="Roto Tanks Direct plastic water tank range"
                 width={1600}
                 height={900}
                 loading="lazy"
@@ -62,38 +62,38 @@ function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-aqua">
-              Our promise
+              Our business
             </div>
             <h2 className="mt-3 font-display text-4xl font-bold text-balance text-ink sm:text-5xl">
-              Tanks built for Kenya. Service built for you.
+              Clear product information and direct supply support.
             </h2>
             <p className="mt-5 text-lg leading-relaxed text-foreground/75">
-              Every tank we sell is UV-stabilized to handle direct sun, ribbed for structural
-              strength, and designed with a stable base for easy installation. From a 1,000L starter
-              tank to a 24,000L industrial reserve — there's a Roto Tank for every demand.
+              We provide plastic water tanks in capacities from 1,000L to 24,000L for domestic,
+              agricultural, commercial, institutional, and industrial water storage. Product details
+              focus on capacity, plastic material, UV-resistant finish, and suitable use cases.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-foreground/75">
-              We keep ordering simple. Send a WhatsApp or place a call, and a real person will
-              confirm your tank size, delivery slot and final price. No drawn-out forms. No
-              guesswork.
+              We keep ordering transparent. Customers can contact us by WhatsApp or phone to
+              confirm tank size, current stock, delivery details, and final price before purchase.
+              We do not present our products as another company's brand.
             </p>
           </div>
 
           <div className="grid gap-5 sm:grid-cols-2">
-            <Pillar icon={Shield} title="UV stabilized" copy="Engineered to resist degradation under daily Kenyan sun." />
-            <Pillar icon={Award} title="Industrial grade" copy="Thick, ribbed walls for impact resistance and shape stability." />
-            <Pillar icon={Truck} title="Nationwide delivery" copy="Stock dispatch for popular sizes and scheduled logistics for large tanks." />
-            <Pillar icon={Users} title="Real support" copy="Friendly people on WhatsApp and phone — no chatbots." />
+            <Pillar icon={Shield} title="Own product identity" copy="Our site represents Roto Tanks Direct water tank products only." />
+            <Pillar icon={Award} title="Product details" copy="Listings focus on capacity, material, intended use, and price." />
+            <Pillar icon={Truck} title="Delivery coordination" copy="Availability and delivery details are confirmed before dispatch." />
+            <Pillar icon={Users} title="Direct support" copy="Contact our team by WhatsApp or phone for product guidance." />
           </div>
         </div>
       </section>
 
       <section className="bg-gradient-surface py-20 md:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-4 lg:px-8">
-          <Metric value="11" label="Tank sizes available" />
+          <Metric value="11" label="Tank sizes listed" />
           <Metric value="1,000L" label="Starting capacity" />
           <Metric value="24,000L" label="Maximum capacity" />
-          <Metric value="100%" label="Transparent pricing" />
+          <Metric value="Kenya" label="Service area" />
         </div>
       </section>
 
@@ -103,10 +103,10 @@ function AboutPage() {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full bg-aqua/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-aqua">
                 <Droplets className="h-3.5 w-3.5" />
-                Talk to us
+                Contact information
               </div>
               <h2 className="mt-4 font-display text-3xl font-bold text-balance sm:text-4xl">
-                Ready when you are. Call or WhatsApp anytime during the day.
+                Speak with Roto Tanks Direct for pricing, availability, and delivery details.
               </h2>
             </div>
             <div className="flex flex-wrap justify-start gap-3 md:justify-end">

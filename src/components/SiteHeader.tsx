@@ -6,7 +6,7 @@ import { PHONE_DISPLAY, telLink } from "@/lib/products";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/products", label: "Tanks & Prices" },
+  { to: "/products", label: "Water Tanks" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -27,7 +27,7 @@ export function SiteHeader() {
           />
           <div className="hidden leading-tight sm:block">
             <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              Kenya
+              Direct
             </div>
           </div>
         </Link>

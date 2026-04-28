@@ -7,16 +7,16 @@ import { PHONE_DISPLAY, products, telLink, whatsappLink } from "@/lib/products";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "All Water Tanks & Prices — Roto Tanks Kenya" },
+      { title: "Plastic Water Tanks & Prices - Roto Tanks Direct" },
       {
         name: "description",
         content:
-          "Full price list of Roto Tanks in Kenya. 1,000L to 24,000L plastic water storage tanks for homes, farms and industry. Order via WhatsApp.",
+          "Roto Tanks Direct plastic water storage tanks from 1,000L to 24,000L for homes, farms, businesses, institutions, and industry. Contact us for availability and pricing.",
       },
-      { property: "og:title", content: "All Water Tanks & Prices — Roto Tanks Kenya" },
+      { property: "og:title", content: "Plastic Water Tanks & Prices - Roto Tanks Direct" },
       {
         property: "og:description",
-        content: "Eleven sizes of heavy-duty plastic water tanks with transparent KSh pricing.",
+        content: "Plastic water tank sizes from 1,000L to 24,000L with listed KSh pricing.",
       },
     ],
   }),
@@ -42,7 +42,7 @@ function ProductsPage() {
     });
   }, [category, query]);
 
-  const wa = whatsappLink("Hello Roto Tanks, please share your full price list.");
+  const wa = whatsappLink("Hello Roto Tanks Direct, please share your current water tank price list.");
 
   return (
     <>
@@ -52,11 +52,11 @@ function ProductsPage() {
             Tank catalogue
           </div>
           <h1 className="mt-3 max-w-3xl font-display text-5xl font-bold text-balance sm:text-6xl">
-            Every size. Every use. One transparent price list.
+            Plastic water tanks by capacity and use.
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-primary-foreground/80">
-            Eleven heavy-duty water tank sizes — from 1,000L kiosk tanks to 24,000L industrial
-            reserves. Tap any tank to order on WhatsApp or call directly.
+            Browse Roto Tanks Direct water storage tanks from 1,000L to 24,000L. Each listing
+            focuses on capacity, material, intended use, price, and delivery availability.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -65,7 +65,7 @@ function ProductsPage() {
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3 text-sm font-semibold text-white shadow-glow"
             >
-              <MessageCircle className="h-4 w-4" /> Request the price list
+              <MessageCircle className="h-4 w-4" /> Request current pricing
             </a>
             <a
               href={telLink()}
@@ -99,7 +99,7 @@ function ProductsPage() {
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search size, profile or use…"
+              placeholder="Search size, profile or use..."
               className="w-full rounded-full border border-border bg-card py-2.5 pl-10 pr-4 text-sm text-ink placeholder:text-muted-foreground focus:border-aqua focus:outline-none focus:ring-2 focus:ring-aqua/30"
             />
           </div>
@@ -124,8 +124,8 @@ function ProductsPage() {
             Need help choosing the right tank?
           </h2>
           <p className="mt-4 text-base text-foreground/70">
-            Tell us your household size, business type or daily water demand — we'll recommend the
-            best capacity and confirm delivery to your area.
+            Tell us your household size, business type, site use, and available installation space.
+            We can suggest a suitable capacity and confirm delivery options for your area.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <a

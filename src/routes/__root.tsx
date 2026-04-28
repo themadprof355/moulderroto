@@ -33,17 +33,17 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Roto Tanks Kenya — Heavy-Duty Water Storage Tanks" },
+      { title: "Roto Tanks Direct - Plastic Water Storage Tanks in Kenya" },
       {
         name: "description",
         content:
-          "Buy heavy-duty plastic water storage tanks in Kenya. Sizes 1,000L to 24,000L. Order via WhatsApp or call +254 756 619 002.",
+          "Roto Tanks Direct manufactures and supplies plastic water storage tanks in Kenya. Sizes from 1,000L to 24,000L for homes, farms, businesses, and institutions.",
       },
-      { name: "author", content: "Roto Tanks Kenya" },
-      { property: "og:title", content: "Roto Tanks Kenya — Built to Store. Built to Last." },
+      { name: "author", content: "Roto Tanks Direct" },
+      { property: "og:title", content: "Roto Tanks Direct - Plastic Water Storage Tanks" },
       {
         property: "og:description",
-        content: "Heavy-duty water storage tanks for Kenyan homes, farms, businesses and industry.",
+        content: "Plastic water storage tanks for homes, farms, businesses, institutions, and industry.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
